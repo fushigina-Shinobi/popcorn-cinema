@@ -203,6 +203,19 @@ nav {
   background: #457b9d;
   height: 10vh;
 }
+.logo {
+  width: 30%;
+  height: 35%;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .nav-container {
   display: flex;
   justify-content: space-around;
@@ -210,9 +223,9 @@ nav {
   flex: 1;
 }
 
-.title-container {
+/* .title-container {
   font-size: 1.2rem;
-}
+} */
 .nav-list {
   font-size: 1.2rem;
 }
@@ -221,6 +234,12 @@ nav {
 }
 .nav-links {
   display: flex;
+}
+.nav-links a :hover {
+  color: var(--clr-primary-5);
+}
+.nav-header h3:hover {
+  color: var(--clr-primary-5);
 }
 .nav-links .home {
   margin-right: 2rem;

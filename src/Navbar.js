@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import popcornLogo from "./popcornLogo.svg";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
         <div className="title-container">
-          <Link to="/">
-            <h3 className="nav-header">Popcorn Movie</h3>
+          <Link to="/" className="nav-header">
+            <img src={popcornLogo} alt="logo" className="logo" />
+            <h3>Movie</h3>
           </Link>
         </div>
         <div className="nav-list">
